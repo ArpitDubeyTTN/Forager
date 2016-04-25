@@ -14,15 +14,15 @@ public class SampleDaoImpl implements SampleDao{
 	
 	EntityManager entityManager;
 	
-	@PersistenceContext
-	public void setEntityManager(EntityManager entityManager) {
-		this.entityManager = entityManager;
-	}
+//	@PersistenceContext
+//	public void setEntityManager(EntityManager entityManager) {
+//		this.entityManager = entityManager;
+//	}
 	
 	public void saveUser(Greeting user) {
-		System.out.println("Saving the user....");
-		entityManager.persist(user);
-		System.out.println("User saved");
+//		System.out.println("Saving the user....");
+//		entityManager.persist(user);
+//		System.out.println("User saved");
 		
 	}
 

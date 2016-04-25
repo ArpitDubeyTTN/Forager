@@ -1,19 +1,14 @@
 package com.ttnd.forager.entites;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
-
-@Entity
-@Table(name="Greeting")
 public class Greeting {
-	
-	@Id
-    private long id;
-	
-	@Column
-    private String content;
+
+    private final long id;
+    private final String content;
+
+    public Greeting(long id, String content) {
+        this.id = id;
+        this.content = content;
+    }
 
     public long getId() {
         return id;
@@ -22,13 +17,4 @@ public class Greeting {
     public String getContent() {
         return content;
     }
-
-	public void setId(long id) {
-		this.id = id;
-	}
-
-	public void setContent(String content) {
-		this.content = content;
-	}
-    
 }
